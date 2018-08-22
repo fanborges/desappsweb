@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Registro</title>
+    <meta charset="UTF-8">
+</head>
+<style type="text/css" media="screen">
+    .grid-container {
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+        background-color: #2196F3;
+        /* padding: 100px; */
+
+        /* align-content: "center"; */
+
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+</style>
+
+<body>
+
+    <body>
+
+        <h2>Formulario de registro</h2>
+        <p>Complete los datos requeridos para poder accesar a nuestros cursos</p>
+        <div class="grid-container">
+            <form action="registro_submit" method="post" accept-charset="utf-8">
+                <div class="grid-item">
+                    <label for="lrfc">RFC:</label>
+                    <input type "text" id="irfc" name="irfc" placeholder="Ingrese su RFC">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="lnombre">Nombre:</label>
+                    <input type "text" id="inombre" name="inombre" placeholder="Ingrese su Nombre.">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="lpaterno">Paterno:</label>
+                    <input type "text" id="ipaterno" name="ipaterno" placeholder="Ingrese su Apellido paterno.">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="lmaterno">Materno:</label>
+                    <input type "text" id="materno" name="materno" placeholder="Ingrese su apellido materno.">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="lempresa">Empresa:</label>
+                    <input type "text" id="iempresa" name="iempresa" placeholder="Ingrese su Empresa.">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="ltelefono">Teléfono:</label>
+                    <input type "tel" pattern="[0-9]{10}" id="itelefono" name="itelefono" placeholder="Ingrese su Teléfono.">
+                </div>
+                </br>
+                <div class="grid-item">
+                    <label for="lemail">E-mail:</label>
+                    <input type="email" id="imail" name="imail" placeholder="Ingrese su correo electrónico">
+                </div>
+                <br>
+                <div class="grid-item">
+                    <label for="lcursos">Cursos:</label>
+                    <select name="scurso" id="scurso">
+                        <option value="0">Seleccione curso</option>
+                        <option value="1">Introducción a la ecología</option>
+                        <option value="2">Ciudadanía y comunidad ecológica</option>
+                        <option value="3">Manejo de recursos hídricos</option>
+                        <option value="4">Desarrollo urbano sustentable</option>
+                    </select>
+                    </br>
+                    <input type="button" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
